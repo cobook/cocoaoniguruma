@@ -54,6 +54,14 @@
 		EED4FDC715A1C9FF00E93463 /* regtrav.c in Sources */ = {isa = PBXBuildFile; fileRef = 7807AC330E2FBB8600A5AB6A /* regtrav.c */; };
 		EED4FDC815A1CA0200E93463 /* regversion.c in Sources */ = {isa = PBXBuildFile; fileRef = 7807AC340E2FBB8600A5AB6A /* regversion.c */; };
 		EED4FDC915A1CA0500E93463 /* st.c in Sources */ = {isa = PBXBuildFile; fileRef = 7807AC350E2FBB8600A5AB6A /* st.c */; };
+		EED4FFA715A1D39600E93463 /* OnigRegexp.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC1A0E2FBB8600A5AB6A /* OnigRegexp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED4FFA915A1D3A100E93463 /* OnigRegexpUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC1C0E2FBB8600A5AB6A /* OnigRegexpUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED4FFAA15A1D45000E93463 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC1F0E2FBB8600A5AB6A /* config.h */; };
+		EED4FFAB15A1D45200E93463 /* oniguruma.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC280E2FBB8600A5AB6A /* oniguruma.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED4FFAC15A1D45500E93463 /* regenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC2B0E2FBB8600A5AB6A /* regenc.h */; };
+		EED4FFAD15A1D45700E93463 /* regint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC2F0E2FBB8600A5AB6A /* regint.h */; };
+		EED4FFAE15A1D45900E93463 /* regparse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC310E2FBB8600A5AB6A /* regparse.h */; };
+		EED4FFAF15A1D45B00E93463 /* st.h in Headers */ = {isa = PBXBuildFile; fileRef = 7807AC360E2FBB8600A5AB6A /* st.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -313,6 +321,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED4FFA715A1D39600E93463 /* OnigRegexp.h in Headers */,
+				EED4FFA915A1D3A100E93463 /* OnigRegexpUtility.h in Headers */,
+				EED4FFAB15A1D45200E93463 /* oniguruma.h in Headers */,
+				EED4FFAA15A1D45000E93463 /* config.h in Headers */,
+				EED4FFAC15A1D45500E93463 /* regenc.h in Headers */,
+				EED4FFAD15A1D45700E93463 /* regint.h in Headers */,
+				EED4FFAE15A1D45900E93463 /* regparse.h in Headers */,
+				EED4FFAF15A1D45B00E93463 /* st.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +758,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/CocoaOniguruma/;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -762,6 +779,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include/CocoaOniguruma/;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
@@ -814,6 +832,7 @@
 				EED4FDB815A1C9B000E93463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
